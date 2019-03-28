@@ -1,2 +1,2 @@
-# magic-the-gathering
-Noroff final CA
+# Magic the gathering
+Noroff final CA, JavaScript Frameworks
