@@ -25,9 +25,9 @@ export default {
     }
   },
   methods: {
-    toggleMenu(event){
+    toggleMenu(){
       this.isOpen = !this.isOpen;
-      this.$emit('on-click', isOpen);
+      this.$emit('on-click', this.isOpen);
     }
   }
 }

@@ -36,7 +36,6 @@ export default {
     },
     logOut(event){
       event.preventDefault();
-      console.log('Logged out')
       sessionStorage.removeItem('AuthToken');
       this.isSession = false;
     }
