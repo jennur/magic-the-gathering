@@ -1,6 +1,7 @@
 
 /* Components */
 @import './components/accordian.component.css';
+@import './components/button.component.css';
 @import './components/card.component.css';
 @import './components/contact.component.css';
 @import './components/login.component.css';

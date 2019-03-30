@@ -1,6 +1,5 @@
 <template>
   <main>
-      <h1>Welcome, {{ username }}</h1>
     <div class="search">
       <SearchComponent v-on:on-search="handleSearch"/>
     </div>
@@ -33,7 +32,6 @@ export default {
     return { 
         cards: [], 
         loaded: false,
-        username: String
     };
   },
   methods: {
@@ -70,8 +68,10 @@ export default {
   },
 
   beforeMount: function() {
-    this.username = localStorage.getItem('Username');
     this.getData();
+    if(!sessionStorage.getItem('AuthToken')) {
+      router.push('home');
+    }
   }
 }
 
