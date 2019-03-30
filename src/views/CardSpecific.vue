@@ -46,7 +46,6 @@ export default {
       })
       .then(data => {
         let card = data.card;
-        console.log(card);
         this.name = card.name;
         this.imageUrl = card.imageUrl;
         this.text = card.text;

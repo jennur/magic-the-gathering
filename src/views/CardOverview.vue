@@ -21,6 +21,7 @@
 <script>
 import SearchComponent from '@/components/SearchComponent.vue';
 import Card from '@/components/Card.vue';
+import router from '@/router.js';
 
 export default {
   name: "CardOverview",
