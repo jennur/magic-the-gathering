@@ -5,7 +5,7 @@ Get started like this:
 1. Clone or download this repository
 2. Navigate to the project folder in your command line
 3. Run `npm install`
-4. Run `yarn serve` and hack yourself into Michaels account from localhost:8080, with Michaels special credentials:
+4. Run `yarn serve` and hack yourself into Michael's account from localhost:8080, with his special credentials:
 <br />
 
 👨‍💼 Username: Michael <br />
