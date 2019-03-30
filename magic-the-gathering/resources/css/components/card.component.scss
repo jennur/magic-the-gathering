@@ -16,35 +16,38 @@
   border-radius: 10px;
   background-color: #fff;
   color: #000;
-}
+  
+  &__image {
+    width: 100%;
+  }
 
-.card__image {
-  width: 100%;
-}
-.card__info {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 15px 0 10px 0px;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 0 10px 0px;
+  }
 }
 
 .card-specific {
   display: flex; 
   flex-direction: row;
-}
+  
+  & ul {
+    list-style: none; 
+    padding: 0;
+  }
 
-.card-specific__image {
-  flex-basis: 40%; 
-}
-.card-specific__text {
-  flex-basis: 60%;
-  text-align: left; 
-}
+  & li {
+    padding: 5px;
+  }
+  
+  &__image {
+    flex-basis: 40%; 
+  }
 
-.card-specific ul {
-  list-style: none; 
-  padding: 0;
-}
-.card-specific li {
-  padding: 5px;
+  &__text {
+    flex-basis: 60%;
+    text-align: left; 
+  }
 }

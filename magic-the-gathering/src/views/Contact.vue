@@ -63,7 +63,9 @@
         placeholder="Your message here ...">
       </textarea>
     </div>
-    <input class="contact-form__submit" type="submit" name="submit" value="Send" />
+    <div class="contact-form__field">
+      <input class="contact-form__submit" type="submit" name="submit" value="Send" />
+    </div>
   </form>
   </div>
   </main>

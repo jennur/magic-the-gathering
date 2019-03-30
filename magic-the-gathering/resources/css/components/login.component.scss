@@ -8,40 +8,48 @@
   font-weight: bold;
   color: #000;
   margin: 0 auto;
-}
-.login form {
-  display: flex; 
-  flex-direction: column;
-  align-items: flex-end;
-}
-.login__field {
-  padding: 7px;
-  margin: 5px;
-  border: 1px solid #000;
-  border-radius: 10px;
-}
-.login__field:focus {
-  outline: none;
-  border: 2px solid rgba(61, 183, 199, 0.7);
-  padding: 6px;
+
+  & form {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__field {
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+
+    &:focus {
+      outline: none;
+      border: 2px solid rgba(61, 183, 199, 0.7);
+      padding: 6px;
+    }
+  }
+
+  &__submit {
+    max-width: 100px; 
+    padding: 10px;
+    margin: 5px; 
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #333;
+    }
+  }
+
+  &__error {
+    color: #c40010;
+    padding: 15px;
+  }
 }
 
-.login__submit {
-  max-width: 100px; 
-  padding: 10px;
-  margin: 5px; 
-  color: #fff;
-  background-color: #000;
-  border: none;
-  border-radius: 10px;
-  outline: none;
-}
 
-.login__submit:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-.login__error {
-  color: #c40010;
-  padding: 15px;
-}
+
+

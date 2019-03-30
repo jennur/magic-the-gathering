@@ -1,18 +1,18 @@
 
 .button {
-    margin: 10px;
-  }
-  .button a, .contact-form__submit {
-    color: #fff;
-    text-decoration: none;
-    background-color: #000;
-    padding: 10px 15px;
-    border-radius: 10px;
-    outline: none;
-  }
-  
-  .button a:hover, .contact-form__submit:hover {
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-  }
+  margin: 10px;
+}
+.button a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  padding: 10px 15px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.button a:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}

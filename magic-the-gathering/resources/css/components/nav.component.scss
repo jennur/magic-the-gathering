@@ -1,12 +1,12 @@
 
 #nav {
   padding: 15px;
-}
 
-#nav a {
-  color: #000;
-}
+  & a {
+    color: #000;
 
-#nav a:hover {
-  color: #444;
+    &:hover {
+      color: #444;
+    }
+  }
 }
