@@ -1,4 +1,17 @@
-# magic-the-gathering
+# Magic the Gathering 🧙‍♂️
+
+Get started like this: 
+
+1. Clone or download this repository
+2. Navigate to the project folder in your command line
+3. Run `npm install`
+4. Run `yarn serve` and hack yourself into Michaels account from localhost:8080, with Michaels special credentials:
+<br />
+
+👨‍💼 Username: Michael <br />
+🔑 Password: @Michael123
+
+# Other details that might be useful
 
 ## Project setup
 ```
