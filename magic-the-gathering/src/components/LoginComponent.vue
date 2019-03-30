@@ -3,14 +3,16 @@
     <h1>Login to see your cards</h1>
     <form v-on:submit="handleCredentials($event)">
       <div class="login__field-wrapper">
-            <label for="username">Username </label><input name="username" class="login__field" type="text" ref="usernameInput"/>
+        <label for="username">Username </label>
+        <input name="username" class="login__field" type="text" ref="usernameInput"/>
       </div>
       <div class="login__field-wrapper">
-        <label for="password">Password </label><input name="password" class="login__field" type="text" ref="passwordInput"/>
+        <label for="password">Password </label>
+        <input name="password" class="login__field" type="password" ref="passwordInput"/>
       </div>
-      <input class="login__submit" type="submit" />
-      <div class="login__error" v-if="errorCheck">{{ errorMsg }}</div>
+      <input class="login__submit" type="submit" value="Login" />
     </form>
+    <div class="login__error" v-if="errorCheck">{{ errorMsg }}</div>
     </div>
 </template>
 

@@ -7,6 +7,9 @@
       <div class="card__info">
         <span><b>Type: </b> {{ type }}</span>
       </div>
+      <div class="button">
+        <router-link :to="'/card-specific/' + cardId">View more</router-link>
+      </div>
     </div>
 </template>
 
@@ -18,7 +21,7 @@ export default {
       type: String,
       text: String,
       imageUrl: String,
-      id: String
+      cardId: String
   }
 
 }

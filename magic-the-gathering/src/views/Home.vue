@@ -1,7 +1,5 @@
 <template>
-  <div class="home">
     <LoginComponent v-on:on-login="handleLogin" />
-  </div>
 </template>
 
 <script>

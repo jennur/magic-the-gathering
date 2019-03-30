@@ -1,7 +1,7 @@
 <template>
     <div class="search">
-      <input type="text" v-on:input="handleSearchTerm($event)" />
-      <input type="submit" />
+      <input class="search__field" type="text" v-on:input="handleSearchTerm($event)" />
+      <input class="search__submit" type="submit" value="Search" />
     </div>
 </template>
 

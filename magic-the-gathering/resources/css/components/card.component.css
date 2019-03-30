@@ -25,5 +25,41 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 15px 0 10px 0;
+  padding: 15px 0 10px 0px;
+}
+
+.card-specific {
+  display: flex; 
+  flex-direction: row;
+}
+
+.card-specific__image {
+  flex-basis: 40%; 
+}
+.card-specific__text {
+  flex-basis: 60%;
+  text-align: left; 
+}
+
+.card-specific ul {
+  list-style: none; 
+  padding: 0;
+}
+.card-specific li {
+  padding: 5px;
+}
+
+.button {
+  margin: 10px;
+}
+.button a, .contact-form__submit {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.button a:hover {
+  background-color: #333;
 }

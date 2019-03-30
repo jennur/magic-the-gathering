@@ -1,6 +1,7 @@
 <template>
   <main>
-    <div class="card-search">
+      <h1>Welcome, {{ username }}</h1>
+    <div class="search">
       <SearchComponent v-on:on-search="handleSearch"/>
     </div>
     <div class="card-container" v-if="loaded">
@@ -13,7 +14,7 @@
       />
     </div>
     <div class="card-container" v-else>
-        Loading cards ...
+        <p>Loading cards ...</p>
     </div>
   </main>
 </template>
@@ -29,16 +30,17 @@ export default {
     SearchComponent
   },
   data() {
-    return { cards: [], 
-             cardElements: [],
-             value: '',
-             loaded: false
-           };
+    return { 
+        cards: [], 
+        loaded: false,
+        username: String
+    };
   },
   methods: {
     getData() {
       fetch('https://cors-anywhere.herokuapp.com/https://api.magicthegathering.io/v1/cards')
       .then(response => {
+        this.loaded = false;
         return response.json();
       })
       .then(data => {
@@ -68,6 +70,7 @@ export default {
   },
 
   beforeMount: function() {
+    this.username = localStorage.getItem('Username');
     this.getData();
   }
 }
